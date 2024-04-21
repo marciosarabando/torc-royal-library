@@ -1,0 +1,112 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>Royal Library</h2>
+
+            <form class="form-horizontal needs-validation" novalidate [formGroup]="formulario" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="has-validation">
+
+                                <label for="memberName" class="form-label">Search By</label>
+
+
+                                <select class="form-select" aria-label="Default select example" formControlName="search"
+                                    [ngClass]="{'is-invalid': submited && formulario.controls['search'].errors}"
+                                    required placeholder="">
+                                    <option value="1">AUTHOR</option>
+                                    <option value="2">ISBN</option>
+                                    <option value="3">OWN / LOVE / WANT TO READ</option>
+                                    <!-- <option *ngFor="let course of courses" value={{course.id}}>{{course.name}}</option> -->
+
+                                </select>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="has-validation">
+
+                                <label for="searchValue" class="form-label">Search Value</label>
+                                <input type="text" id="searchValue" name="searchValue" class="form-control input-upper"
+                                    formControlName="searchValue" aria-describedby="passwordHelpBlock"
+                                    [ngClass]="{'is-invalid': submited && formulario.controls['searchValue'].errors}"
+                                    autofocus required />
+                                <div class="invalid-feedback"
+                                    *ngIf="submited && formulario.controls['searchValue'].errors">
+                                    Please insert a value for search.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-6 d-grid gap-2">
+                            <button type="button" type="submit" class="btn btn-primary">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <hr />
+
+            <table class="table table-responsive">
+                <thead>
+                    <th>Book Title</th>
+                    <th>Publisher</th>
+                    <th>Author</th>
+                    <th>Book Title</th>
+                    <th>Type</th>
+                    <th>ISBN</th>
+                    <th>Category</th>
+                    <th>Available Copies</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let book of books">
+                        <td>{{book.title}}</td>
+                        <td>{{book.lastName}}</td>
+                        <td>{{book.firstName}}</td>
+                        <td>{{book.type}}</td>
+                        <td>{{book.isbn}}</td>
+                        <td>{{book.categoryName}}</td>
+                        <td>{{book.categoryName}}</td>
+                        <td>{{book.copiesInUse}} / {{book.totalCopies}}</td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+</script>
