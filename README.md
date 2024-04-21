@@ -7,8 +7,8 @@ This project was created with Backend for FrontEnd architecture for evaluation p
 Adjust the connection string for your SQL database in the appsettings.Development file
 
 ## Usage sample:
-backend/dotnet run
-frontend/npm start
+backend\Adapters\Torc.BookLibrary.API\dotnet run
+frontend\npm start
 
 <br>
 
@@ -16,4 +16,3 @@ frontend/npm start
 - Marcio Sarabando
 - .NET Developer
 - In: https://www.linkedin.com/in/marciosarabando/
-
