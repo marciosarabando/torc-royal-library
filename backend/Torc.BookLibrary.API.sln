@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A5288EE2-11B9-4EAE-A6D7-BEDEA37D4723}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{32DF2F00-2EB4-41A9-B341-D2E52FC04D90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A60AAD2B-111D-49C7-A7A5-721BA3E8424F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Torc.BookLibrary.API", "Adapters\Torc.BookLibrary.API\Torc.BookLibrary.API.csproj", "{5CF21FA1-D3A5-4FC8-8F11-25A818D40F64}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Torc.BookLibrary.IoC", "Core\Torc.BookLibrary.IoC\Torc.BookLibrary.IoC.csproj", "{64EA8301-53D2-4134-838D-F6FF9DF33397}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Torc.BookLibrary.Application", "Core\Torc.BookLibrary.Services\Torc.BookLibrary.Application.csproj", "{FE35B0F3-B87C-4A47-8018-306A306060AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Torc.BookLibrary.Repository", "Core\Torc.BookLibrary.Repository\Torc.BookLibrary.Repository.csproj", "{9BE7F532-9258-4C6F-B250-3A7AEC1A0A5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Torc.BookLibrary.Domain", "Core\Torc.BookLibrary.Domain\Torc.BookLibrary.Domain.csproj", "{F6A6BAA2-83B2-4AA3-8152-E6DA6A129529}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CF21FA1-D3A5-4FC8-8F11-25A818D40F64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CF21FA1-D3A5-4FC8-8F11-25A818D40F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CF21FA1-D3A5-4FC8-8F11-25A818D40F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CF21FA1-D3A5-4FC8-8F11-25A818D40F64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64EA8301-53D2-4134-838D-F6FF9DF33397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64EA8301-53D2-4134-838D-F6FF9DF33397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64EA8301-53D2-4134-838D-F6FF9DF33397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64EA8301-53D2-4134-838D-F6FF9DF33397}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE35B0F3-B87C-4A47-8018-306A306060AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE35B0F3-B87C-4A47-8018-306A306060AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE35B0F3-B87C-4A47-8018-306A306060AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE35B0F3-B87C-4A47-8018-306A306060AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BE7F532-9258-4C6F-B250-3A7AEC1A0A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE7F532-9258-4C6F-B250-3A7AEC1A0A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE7F532-9258-4C6F-B250-3A7AEC1A0A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE7F532-9258-4C6F-B250-3A7AEC1A0A5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6A6BAA2-83B2-4AA3-8152-E6DA6A129529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A6BAA2-83B2-4AA3-8152-E6DA6A129529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A6BAA2-83B2-4AA3-8152-E6DA6A129529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A6BAA2-83B2-4AA3-8152-E6DA6A129529}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{32DF2F00-2EB4-41A9-B341-D2E52FC04D90} = {A5288EE2-11B9-4EAE-A6D7-BEDEA37D4723}
+		{A60AAD2B-111D-49C7-A7A5-721BA3E8424F} = {A5288EE2-11B9-4EAE-A6D7-BEDEA37D4723}
+		{5CF21FA1-D3A5-4FC8-8F11-25A818D40F64} = {32DF2F00-2EB4-41A9-B341-D2E52FC04D90}
+		{64EA8301-53D2-4134-838D-F6FF9DF33397} = {A60AAD2B-111D-49C7-A7A5-721BA3E8424F}
+		{FE35B0F3-B87C-4A47-8018-306A306060AA} = {A60AAD2B-111D-49C7-A7A5-721BA3E8424F}
+		{9BE7F532-9258-4C6F-B250-3A7AEC1A0A5B} = {A60AAD2B-111D-49C7-A7A5-721BA3E8424F}
+		{F6A6BAA2-83B2-4AA3-8152-E6DA6A129529} = {A60AAD2B-111D-49C7-A7A5-721BA3E8424F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA29D865-BF9A-43EB-B46D-0BB956913BB0}
+	EndGlobalSection
+EndGlobal
